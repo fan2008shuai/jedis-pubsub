@@ -14,7 +14,7 @@ public class JedisResource {
         config.setMaxWait(2000);
 //        config.setMaxTotal(1);
 //        config.setMaxWaitMillis(2000);
-        config.setMaxIdle(5);
+        config.setMaxIdle(1);
         config.setMinIdle(1);
 
         return config;
