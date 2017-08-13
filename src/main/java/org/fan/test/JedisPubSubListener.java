@@ -26,7 +26,7 @@ public class JedisPubSubListener extends JedisPubSub {
 
     public void onSubscribe(String s, int i) {
         subCountDownLatch.countDown();
-        System.out.println("sub: " + s + " channel count: " + i);
+        System.out.println("sub:  " + s + " channel count: " + i);
     }
 
     public void onUnsubscribe(String s, int i) {
