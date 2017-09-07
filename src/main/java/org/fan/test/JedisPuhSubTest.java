@@ -85,6 +85,8 @@ public class JedisPuhSubTest {
 
                     jedis.subscribe(listener, subChannels);
                 } catch (Exception e) {
+                    //竟然不打印异常
+                    e.printStackTrace();
                     if (jedis != null) {
                         JedisResource.getJedisPool().returnBrokenResource(jedis);
                     }
