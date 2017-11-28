@@ -51,7 +51,8 @@ public class JedisPuhSubTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        listener.unsubscribe(lastChannels.toArray(new String[0]));
+        //listener.unsubscribe(lastChannels.toArray(new String[0]));
+        listener.unsubscribe();
         try {
             unsubCountDownLatch.await();
         } catch (InterruptedException e) {
